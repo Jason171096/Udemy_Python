@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>
+        {%block title %}
+
+        {% endblock %}
+        Jason Martinez
+    </title>
+</head>
+<body>
+
+    <header>
+        <div id="logo">
+            <img src="{% static 'images/logo.png' %}" alt="">
+            <h1>Sitio web con Django </h1>
+        </div>
+       
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="/inicio">Inicio</a>
+            </li>
+            <li>
+                <a href="{% url 'hola_mundo' %}">HolaMundo</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="barra">
+        <span class="bar-left">
+
+        </span>
+        <span class="bar-fill">
+
+        </span>
+        <span class="bar-right">
+
+        </span>
+    </div>
+
+    <div id="content">
+        <div class="box">
+            <h2 class="title">Titulo de prueba</h2>
+            {%block content %}
+                <strong>Esto es un bloque</strong>
+            {% endblock %}
+            <p>{{ "Metodo para poner en mayusculas"|upper }}</p>
+        </div>
+    </div>
+
+    <footer>
+        Master in Python &copy; {% now "d/m/Y" %}
+    </footer>
+</body>
+</html>

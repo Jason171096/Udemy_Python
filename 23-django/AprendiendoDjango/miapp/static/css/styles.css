@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+header{
+    width: 1200px;
+    height: 140px;
+    background-color: #282328;
+    margin: 0 auto;
+
+}
+
+#logo{
+    width: 40%;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+#logo h1{
+    display: block;
+    letter-spacing: 2px;
+    font-weight: 50;
+    color: rgb(22, 107, 29);
+    margin-top: 15px;
+    margin-left: 150px;
+}
+
+#logo img{
+    display: block;
+    width: 70px;
+    float: left;
+    margin-top: 20px;
+}
+
+nav{
+    width: 1250px;
+    height: 40px;
+    background-color: cornflowerblue;
+    border: 1px solid #141314;
+    margin: 0 auto;
+    box-shadow: 0px, 100px, 100px, gray;
+}
+
+nav ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+nav ul li{
+    line-height: 40px;
+    float: left;
+}
+
+nav ul li a{
+    display: block;
+    line-height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: bisque;
+}
+
+nav ul li a:hover{
+    background-color: rgb(22, 107, 29);
+    box-shadow: 0px, 0px, 5px, black;
+    color: beige;
+    transition: all 500ms;
+}
+
+.barra{
+    width: 1250px;
+    margin: 0 auto;
+}
+
+.bar-left{
+    display: block;
+    border-left: 20px solid transparent;
+    border-top: 10px solid #202449;
+    float: left;
+}
+
+.bar-right{
+    display: block;
+    border-right: 20px solid transparent;
+    border-top: 10px solid #202449;
+    float: right;
+}
+
+.bar-fill{
+    display: block;
+    width: 1210px;
+    height: 10px;
+    background-color: #202449;
+    float: left;
+}
+
+#content {
+    width: 1210px;
+    min-height: 930px;
+    margin: 00 auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.box{
+    background: white;
+    width: 95%;
+    min-height: 930px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.title{
+    color: #444 ;
+    letter-spacing: 5px;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+footer{
+    width: 1250px;
+    background-color: #282328;
+    border: 1px solid #333;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    box-shadow: 0px, 0px, 20px, gray;
+    margin: 0 auto;
+}

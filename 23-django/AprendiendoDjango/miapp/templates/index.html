@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block title %} Jason {% endblock %}
+
+{% block content %}
+    {{ block.super }}
+
+    {% comment 'Nota de comentario' %}
+        <h1>PErRRRORORO</h1>
+    {% endcomment %}
+    <h1>Este es el inicio</h1>
+
+    {{mivar}}
+
+    {{lenguajes}}
+    <h3>Listado de Lenguajes</h3>
+    <ul>
+        {%for lenguaje in lenguajes %}
+        <li> {{forloop.counter}} {{lenguaje}}</li>
+        {%endfor%}
+    </ul>
+
+    {% include 'hola_mundo.html' %}
+
+{% endblock %}
