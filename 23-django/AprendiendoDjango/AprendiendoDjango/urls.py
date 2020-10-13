@@ -26,4 +26,12 @@ urlpatterns = [
     path('inicio/', views.index_i, name= "index"),
     path('hola_mundo/', views.hola_mundo, name="hola_mundo"),
     path('contacto/<str:nombre>', views.contacto, name= "contacto"),
+    path('crear_articulo/', views.crear_articulo, name="crear_articulo"),
+    path('articulo/', views.articulo, name="articulo"),
+    path('editar_articulo/<int:id>', views.editar_articulo),
+    path('articulos/', views.articulos, name="articulos"),
+    path('eliminar_articulo/<int:id>', views.eliminar_articulo, name="borrar"),
+    path('create_article/', views.create_article, name="create_article"),
+    path('save_article/', views.save_article, name="save_article"),
+    path('create_forms_article/', views.create_forms_article, name="create_forms_article")
 ]

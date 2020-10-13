@@ -18,8 +18,7 @@
         <div id="logo">
             <img src="{% static 'images/logo.png' %}" alt="">
             <h1>Sitio web con Django </h1>
-        </div>
-       
+        </div>    
     </header>
 
     <nav>
@@ -29,6 +28,15 @@
             </li>
             <li>
                 <a href="{% url 'hola_mundo' %}">HolaMundo</a>
+            </li>
+            <li>
+                <a href="{% url 'articulos' %}">Articulos</a>
+            </li>
+            <li>
+                <a href="{% url 'create_article' %}">Crear Aticulos</a>
+            </li>
+            <li>
+                <a href="{% url 'create_forms_article' %}">Crear Aticulos con Django</a>
             </li>
         </ul>
     </nav>

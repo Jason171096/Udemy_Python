@@ -119,6 +119,48 @@ nav ul li a:hover{
     border-radius: 5px;
 }
 
+.box form{
+    width: 40%;
+}
+
+.box form input,
+.box form label{
+    display: block;
+    padding: 5px;
+    padding-left: 0px;
+}
+
+.box form input[type="text"],
+.box form textarea
+.box form select{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.box select{
+    width: 100px;
+    padding: 5px;
+}
+
+.box form input[type="submit"],
+.box form input[type="button"]
+.box form button{
+    padding: 10px;
+    margin-top: 5px;
+    background: #166B1D;
+    border: #141314;
+    color: #ddd;
+    transition: 300ms;
+}
+
+.box form input[type="submit"]:hover,
+.box form input[type="button"]:hover,
+.box form button{
+    cursor: pointer;
+    background: #0a490f;
+    transition: 300ms;
+}
+
 .title{
     color: #444 ;
     letter-spacing: 5px;
@@ -136,4 +178,17 @@ footer{
     text-align: center;
     box-shadow: 0px, 0px, 20px, gray;
     margin: 0 auto;
+}
+
+.error{
+    color: red;
+    box-shadow: 0px, 0px, 4px, black;
+}
+
+.message{
+    padding: 20px;
+    background: #0a490f;
+    color: lightgoldenrodyellow;
+    margin-bottom: 20px;
+    text-align: center;
 }
