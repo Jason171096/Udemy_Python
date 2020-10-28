@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+header{
+    width: 1200px;
+    height: 140px;
+    background-color: #282328;
+    margin: 0 auto;
+
+}
+
+#logo{
+    width: 40%;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+#logo h1{
+    display: block;
+    letter-spacing: 2px;
+    font-weight: 50;
+    color: rgb(22, 107, 29);
+    margin-top: 15px;
+    margin-left: 150px;
+}
+
+#logo img{
+    display: block;
+    width: 70px;
+    float: left;
+    margin-top: 20px;
+}
+
+nav{
+    width: 1250px;
+    height: 40px;
+    background-color: cornflowerblue;
+    border: 1px solid #141314;
+    margin: 0 auto;
+    box-shadow: 0px, 100px, 100px, gray;
+}
+
+nav > ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+nav > ul > li{
+    line-height: 40px;
+    float: left;
+}
+
+nav > ul > li > a{
+    display: block;
+    line-height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: bisque;
+}
+
+nav > ul > li > a:hover{
+    background-color: rgb(22, 107, 29);
+    box-shadow: 0px, 0px, 5px, black;
+    color: beige;
+    transition: all 500ms;
+}
+
+nav > ul > li > ul{
+    display: none;
+    position: absolute;
+    color: white;
+    text-align: left;
+    width: 150px;
+    box-shadow: 0px 2px 2px gray;
+}
+
+nav > ul > li:hover > ul{
+    display: block;
+    color: wheat;
+    margin: 0px;
+    list-style: none;
+}
+
+nav > ul > li:hover > ul > li{
+    background: #282328;
+    border-bottom: 1px solid white;
+    padding: 8px;
+    line-height: 25px;
+    font-size: 12px;
+    transition: all 300ms;
+}
+
+nav > ul > li:hover > ul > li > a{
+    color: white; 
+    transition: all 300ms; 
+}
+
+nav > ul > li:hover > ul > li:hover{
+    background-color: #166B1D;   
+}
+
+nav > ul > li:hover > ul > li:hover a{
+    display: block;
+    color: white;   
+}
+
+.barra{
+    width: 1250px;
+    margin: 0 auto;
+}
+
+.bar-left{
+    display: block;
+    border-left: 20px solid transparent;
+    border-top: 10px solid #202449;
+    float: left;
+}
+
+.bar-right{
+    display: block;
+    border-right: 20px solid transparent;
+    border-top: 10px solid #202449;
+    float: right;
+}
+
+.bar-fill{
+    display: block;
+    width: 1210px;
+    height: 10px;
+    background-color: #202449;
+    float: left;
+}
+
+#content {
+    width: 1210px;
+    min-height: 930px;
+    margin: 00 auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.box{
+    background: white;
+    width: 95%;
+    min-height: 930px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.box a{
+   color :#444;
+}
+
+.box a:hover{
+    transition: 100ms;
+    color: #166B1D;
+}
+
+.box form{
+    width: 40%;
+}
+
+.box form input,
+.box form label{
+    display: block;
+    padding: 5px;
+    padding-left: 0px;
+}
+
+.box form input[type="text"],
+.box form input[type="email"],
+.box form input[type="password"],
+.box form textarea
+.box form select{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.box select{
+    width: 100px;
+    padding: 5px;
+}
+
+.box form input[type="submit"],
+.box form input[type="button"]
+.box form button{
+    padding: 10px;
+    margin-top: 5px;
+    background: #166B1D;
+    border: #141314;
+    color: #ddd;
+    transition: 300ms;
+}
+
+.box form input[type="submit"]:hover,
+.box form input[type="button"]:hover,
+.box form button{
+    cursor: pointer;
+    background: #0a490f;
+    transition: 300ms;
+}
+
+.title{
+    color: #444 ;
+    letter-spacing: 5px;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+footer{
+    width: 1250px;
+    background-color: #282328;
+    border: 1px solid #333;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    box-shadow: 0px, 0px, 20px, gray;
+    margin: 0 auto;
+}
+
+.error{
+    color: red;
+    box-shadow: 0px, 0px, 4px, black;
+}
+
+.message{
+    padding: 20px;
+    background: #0a490f;
+    color: lightgoldenrodyellow;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.article{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-bottom: 1px solid #eee;
+    clear: both;
+}
+
+.article .image{
+    width: 200px;
+    height: 200px;
+    float: left;
+    overflow: hidden;
+}
+
+.article .img img{
+    height: 200px;
+}
+
+.article .data{
+    float: left;
+    padding: 15px;
+    padding-top: 0px;
+}
+
+.clearfix{
+    clear: both;
+    clear: none;
+}
+
+.article h2{
+    display: block;
+    font-size: 25px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.article span.date{
+    display: block;
+    font-size: 15px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.article .btn-Borrar{
+    padding: 10px;
+    background: rgb(129, 21, 21);
+    color: #ddd;
+    border: 1px solid black;
+    display: block;
+    margin-top: 15px;
+    width: 10px;
+    text-align: center;
+}
+
+/* Estilos para la nueva app mainapp */
+
+.date{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.content{
+    line-height: 25px;
+}
+
+

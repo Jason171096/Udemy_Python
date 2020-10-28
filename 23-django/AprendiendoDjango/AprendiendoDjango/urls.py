@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf import settings
 
 
 from miapp import views
@@ -35,3 +36,9 @@ urlpatterns = [
     path('save_article/', views.save_article, name="save_article"),
     path('create_forms_article/', views.create_forms_article, name="create_forms_article")
 ]
+
+#Configuracion para cargar imagenes
+
+if settings.DEBUG:
+    from django.conf.urls.static import static
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

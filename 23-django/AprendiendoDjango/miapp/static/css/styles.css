@@ -192,3 +192,59 @@ footer{
     margin-bottom: 20px;
     text-align: center;
 }
+
+.article{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-bottom: 1px solid #eee;
+    clear: both;
+}
+
+.article .image{
+    width: 200px;
+    height: 200px;
+    float: left;
+    overflow: hidden;
+}
+
+.article .img img{
+    height: 200px;
+}
+
+.article .data{
+    float: left;
+    padding: 15px;
+    padding-top: 0px;
+}
+
+.clearfix{
+    clear: both;
+    clear: none;
+}
+
+.article h2{
+    display: block;
+    font-size: 25px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.article span.date{
+    display: block;
+    font-size: 15px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.article .btn-Borrar{
+    padding: 10px;
+    background: rgb(129, 21, 21);
+    color: #ddd;
+    border: 1px solid black;
+    display: block;
+    margin-top: 15px;
+    width: 10px;
+    text-align: center;
+}
+
+

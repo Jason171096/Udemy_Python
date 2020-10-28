@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>
+        Jason Martinez
+    </title>
+</head>
+<body>
+
+    <header>
+        <div id="logo">
+            <img src="{% static 'images/logo.png' %}" alt="">
+            <h1>Sitio web Jason </h1>
+        </div>    
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="{% url 'inicio' %}">Inicio</a>
+            </li>
+            {% if user.email %}
+                <li>
+                    <a href="{% url 'articles' %}">Articulos</a>
+                    <ul>
+                        {% for category in categories %}
+                            <li>
+                                <a href="{% url 'category' category.0 %}">{{ category.1 }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                {% for page in pages%}
+                    <li>
+                        <a href="{% url 'page' page.2 %}">{{ page.1 }}</a>
+                    </li>
+                {% endfor %}
+                <li>
+                    <a href="{% url 'logout' %}">Logout</a>
+                </li>
+            {% else %}
+                <li>
+                    <a href="{% url 'register' %}">Registro</a>
+                </li><li>
+                    <a href="{% url 'login' %}">Login</a>
+                </li>
+            {% endif %}
+        </ul>
+    </nav>
+
+    <div class="barra">
+        <span class="bar-left">
+
+        </span>
+        <span class="bar-fill">
+
+        </span>
+        <span class="bar-right">
+
+        </span>
+    </div>
+
+    <div id="content">
+        <div class="box">
+                {%block content %}
+                {% endblock %}
+        </div>
+    </div>
+
+    <footer>
+        Master in Python &copy; {% now "d/m/Y" %}
+    </footer>
+</body>
+</html>

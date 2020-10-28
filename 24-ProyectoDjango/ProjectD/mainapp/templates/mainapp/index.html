@@ -1,0 +1,23 @@
+{% extends 'layouts/layout.html' %}
+
+{% block content %}
+        {% if messages %}
+            {% for message in messages%}
+                <div class="messages">
+                {{message}}
+                </div>
+            {% endfor%}
+        {% endif %}
+
+    {% if user.email%}
+        <h2>Bienvenido, {{request.user.first_name}} {{request.user.last_name}}</h2>
+        <p>
+            {{user.email}}
+        </p>
+    {% else %}
+        <h2>Identificate por favor</h2>
+        
+    {% endif %}
+
+{% endblock %}
+

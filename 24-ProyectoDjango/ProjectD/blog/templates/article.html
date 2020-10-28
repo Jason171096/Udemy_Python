@@ -1,0 +1,11 @@
+{% extends 'layouts/layout.html' %}
+
+{% block content %}
+    {% if articulo.image.url|length >= 1 and articulo.image.url != 'null' %}
+        <div class = "image">
+            <img src="{{articulo.image.url}}" />
+        </div>
+    {% endif %}
+    <h1>{{article.title}}</h1>
+    <span>{{article.content|safe}}</span>
+{% endblock %}

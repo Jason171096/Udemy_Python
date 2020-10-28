@@ -1,0 +1,43 @@
+{% extends 'layouts/layout.html' %}
+
+{% block content %}
+    {% for articulo in articles %}
+            <article class = "article">
+
+                {% if articulo.image.url|length >= 1 and articulo.image.url != 'null' %}
+                    <div class = "image">
+                        <img src="{{articulo.image.url}}" />
+                    </div>
+                {% endif %}
+                <div>
+                    <h2>
+                        <a href="{% url 'article' articulo.id %}">{{articulo.title}}</a>
+                    </h2>
+                    <p>
+                        {% for category in articulo.Category.all %}
+                            <a href="#">{{category}}</a>
+                        {% endfor %}
+                    </p>
+                    <span class="date">
+                    {{articulo.user.username}} {{articulo.user.last_name}}
+                    |
+                    {{articulo.create_at}}
+                    </span>
+                    <p>
+                        {{articulo.content|safe}}
+                        {% if articulo.public %}
+                            <strong>Publicado</strong>
+                        {% else %}
+                            <strong>Privado</strong>
+                        {% endif %}
+                        </br>
+                    </p>
+                </div>
+                <div class = "clearfix"></div>
+            </article>
+    {% endfor %}
+
+    {% include 'pagination.html' %}
+
+{% endblock %}
+
